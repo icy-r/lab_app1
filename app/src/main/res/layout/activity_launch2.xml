@@ -1,0 +1,108 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchActivity1">
+
+    <RelativeLayout
+        android:id="@+id/onboarding_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipToOutline="true"
+        android:background="#D6EFD8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="s" >
+        <TextView
+            android:id="@+id/excellent_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nature_bran"
+            android:text="@string/excellent_"
+            android:textAppearance="@style/excellent"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="-2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+        <View
+            android:id="@+id/nature_bran"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/applogo1" />
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/excellent_"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="9sp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/onboarding_desc2"
+            android:textAppearance="@style/desc1" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desc2"
+            android:paddingTop="30dp"
+            android:text="@string/progresstxt"
+            android:textAppearance="@style/progressstyle"
+            android:lineSpacingExtra="9sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/pagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/next2"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/pagi1"
+            android:textAppearance="@style/pagi"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:translationY="-3.8sp" />
+
+        <Button
+            android:id="@+id/next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/button"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="@string/next"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/progress"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="false"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="67"
+            android:progressDrawable="@drawable/circular_progress_bar" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

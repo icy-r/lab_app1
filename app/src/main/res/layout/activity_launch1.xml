@@ -1,0 +1,101 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchActivity1">
+
+    <RelativeLayout
+        android:id="@+id/onboarding_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipToOutline="true"
+        android:background="#D6EFD8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="s" >
+
+        <View
+            android:id="@+id/nature_bran"
+            android:layout_width="291dp"
+            android:layout_height="279dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="59dp"
+            android:background="@drawable/applogo1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/nature_bran"
+            android:gravity="center"
+            tools:ignore="UnknownId">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcometxt"
+                android:textAlignment="center"
+                android:textColor="#FF000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="30sp"
+                android:textColor="#508D4E"
+                android:layout_marginStart="20sp"
+                android:textAlignment="center" />
+        </LinearLayout>
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="398dp"
+            android:layout_marginEnd="37dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="9sp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/onboarding_desc1"
+            android:textAppearance="@style/desc1" />
+
+        <TextView
+            android:id="@+id/pagi"
+            android:layout_width="40dp"
+            android:layout_height="44dp"
+            android:layout_above="@+id/next1"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/pagi1"
+            android:textAppearance="@style/pagi"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:translationY="-3.8sp" />
+        <Button
+            android:id="@+id/next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/button"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="@string/next"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

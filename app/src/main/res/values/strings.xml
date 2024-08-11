@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EcoLife</string>
+    <string name="welcometxt">Welcome to </string>
+    <string name="onboarding_desc1">Your journey to a sustainable lifestyle starts here.</string>
+    <string name="pagi1">...</string>
+    <string name="next">Next</string>
+    <string name="excellent_">Excellent!!!</string>
+    <string name="task">Today\'s Task</string>
+    <string name="onboarding_desc2">your moves getting better day by day!!</string>
+    <string name="progresstxt">Last 3 day Progress</string>
+    <string name="onboarding_desc3">Sometimes <b>Small actions </b> can make <b>Big difference</b>.</string>
+    <string name="getstarted">Get Started</string>
+    <string name="task1">Water the plants</string>
+    <string name="task2">Dispose trashes separately</string>
+    <string name="task3">Feed few animals</string>
+</resources>

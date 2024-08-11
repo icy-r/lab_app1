@@ -1,0 +1,130 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchActivity1">
+
+    <RelativeLayout
+        android:id="@+id/onboarding_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipToOutline="true"
+        android:background="#D6EFD8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="s" >
+        <TextView
+            android:id="@+id/st_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="321dp"
+            android:text="@string/task"
+            android:textAppearance="@style/excellent"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="-2sp"
+            android:gravity="center_horizontal|center_vertical"
+            />
+        <View
+            android:id="@+id/nature_bran"
+            android:layout_width="291dp"
+            android:layout_height="279dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="104dp"
+            android:background="@drawable/applogo1" />
+
+        <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="398dp"
+            android:layout_marginEnd="37dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="9sp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/onboarding_desc3"
+            android:textAppearance="@style/desc1"
+            android:textSize="18sp" />
+
+
+
+        <TextView
+            android:id="@+id/pagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/pagi1"
+            android:textAppearance="@style/pagi"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="60dp"
+            android:translationY="-3.8sp" />
+
+        <Button
+            android:id="@+id/next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/button"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="@string/getstarted"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/desc3"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/task1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/task1"
+                android:textSize="18sp"/>
+            <CheckBox
+                android:id="@+id/task2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/task2"
+                android:textSize="18sp"/>
+            <CheckBox
+                android:id="@+id/task3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/task3"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
