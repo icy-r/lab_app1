@@ -8,21 +8,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class LaunchActivity2:AppCompatActivity() {
-    lateinit var nextBtn: Button
+class OnBoardActivity3:AppCompatActivity() {
+    private lateinit var nextBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_launch2)
+        setContentView(R.layout.activity_launch3)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        nextBtn = findViewById(R.id.next2)
+        nextBtn = findViewById(R.id.next3)
         nextBtn.setOnClickListener {
-            val intent = Intent(this, LaunchActivity3::class.java).also {
+            val intent = Intent(this, LoginAvtivity::class.java).also {
                 startActivity(it)
             }
             startActivity(intent)

@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         //after 2 seconds jump to activity_launch1.xml
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, LaunchActivity1::class.java).also {
+            val intent = Intent(this, OnBoardActivity1::class.java).also {
                 startActivity(it)
             }
             startActivity(intent)
